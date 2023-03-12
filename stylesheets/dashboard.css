@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  text-decoration: none;
+}
+a:active{
+  text-decoration: none;
+}
+nav {
+  background-color: midnightblue;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0;
+  color: white;
+}
+.menu-item {
+  border: 1px solid #333;
+  padding: 1%;
+}
+.menu-item:hover{
+  background-color: #333;
+
+}
+#side-menu {
+  background-color: #333;
+  color: #fff;
+  float: left;
+  height: 100%;
+  padding: 20px 0;
+  width: 200px;
+}
+
+#side-menu a {
+  color: #fff;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+#side-menu a:hover {
+  background-color: #1e90ff;
+}
+
+.content {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+#pending-assignments, #submitted-assignments, #registered-courses, #request-course-registration, section {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+#submit-assignment-form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 60%;
+  margin: 20px auto;
+}
+
+input[type="text"], input[type="file"], select {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+div.assignment-filters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+span.assignment-filters{
+  padding: 0.5% 1% 0.5% 1%;
+}
+
+@media (max-width: 992px) {
+  header {
+    text-align: left;
+  }
+  
+  #side-menu {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
